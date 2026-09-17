@@ -1,0 +1,21 @@
+meta {
+  name: White/Black List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{data_api_url}}/apiv2/wblist
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-IAUTH: {{inf_data_api_auth_token}}
+  Accept-Encoding: application/gzip
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

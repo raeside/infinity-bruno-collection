@@ -1,0 +1,20 @@
+meta {
+  name: Whitelist
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/whitelist?after=1771599895
+  body: none
+  auth: inherit
+}
+
+params:query {
+  after: 1771599895
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

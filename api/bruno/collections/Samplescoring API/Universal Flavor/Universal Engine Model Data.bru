@@ -1,0 +1,16 @@
+meta {
+  name: Universal Engine Model Data
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{samplescoring_api_url}}/v3/universalEngine/modelData
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

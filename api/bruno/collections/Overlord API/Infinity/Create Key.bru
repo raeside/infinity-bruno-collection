@@ -1,0 +1,30 @@
+meta {
+  name: Create Key
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{private_api_url_mig}}/apiv1.3/mgmt/key
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~: 
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:json {
+  {
+    "AccountName": "Demo Test March11"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

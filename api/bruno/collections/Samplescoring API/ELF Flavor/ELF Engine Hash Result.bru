@@ -1,0 +1,16 @@
+meta {
+  name: ELF Engine Hash Result
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{samplescoring_api_url}}/v3/features/bahamutElfEngine/{{sample_elf_hash}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

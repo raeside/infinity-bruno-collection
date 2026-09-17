@@ -1,0 +1,20 @@
+meta {
+  name: BQ Centroid IDs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{centropy_api_url}}/v1/backtest/queue
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  Get the list of all centroid IDs pending backtest
+}

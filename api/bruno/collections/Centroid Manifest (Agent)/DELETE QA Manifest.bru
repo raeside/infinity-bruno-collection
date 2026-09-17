@@ -1,0 +1,16 @@
+meta {
+  name: DELETE QA Manifest
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{linkerd_gateway_use2}}/centroidmanifest/v3/manifest/{{universal_scope}}/{{FLEXO_D_2_PASS_MODEL_ID}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

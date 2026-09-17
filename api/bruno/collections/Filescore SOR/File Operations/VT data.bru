@@ -1,0 +1,16 @@
+meta {
+  name: VT data
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{filescore_sor_url}}/v3/vt/00001AA39790C008C4B79D6669527E83131FE01694A2ADC2CF534BEB00FA6AFA
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

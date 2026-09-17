@@ -1,0 +1,22 @@
+meta {
+  name: File State
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{filescore_sor_url}}/v3/file/{{sample_filescore_hash}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "fileStateId": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Active Centroids Copy
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{centropy_api_url}}/v1/active_centroids
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

@@ -1,0 +1,16 @@
+meta {
+  name: QA Auth Account [Tenant Deletion]
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/private/account/1D78A2643B8741CD88150B337E0DDD73
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

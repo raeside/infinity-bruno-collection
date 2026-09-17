@@ -1,0 +1,9 @@
+{
+  "name": "Infinity Data API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "version": "1"
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get centroids v1.0
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{data_api_url}}/apiv1.0/centroids?after={{epoch}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  after: {{epoch}}
+}
+
+headers {
+  X-IAUTH: 1CE91A9489A311E59D14120CD2C39521
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

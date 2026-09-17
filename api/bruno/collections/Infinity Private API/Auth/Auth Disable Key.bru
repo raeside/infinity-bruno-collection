@@ -1,0 +1,16 @@
+meta {
+  name: Auth Disable Key
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{private_api_url}}/apiv1.3/auth/venue/key/<auth_key>
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

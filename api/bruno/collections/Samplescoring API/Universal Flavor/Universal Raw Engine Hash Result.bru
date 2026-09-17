@@ -1,0 +1,16 @@
+meta {
+  name: Universal Raw Engine Hash Result
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{samplescoring_api_url}}/v3/_/raw/universalEngine/{{sample_pe_hash}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

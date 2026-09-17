@@ -1,0 +1,30 @@
+meta {
+  name: Release Manifest
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{linkerd_gateway_use2}}/centroidmanifest/v3/manifest/{{universal_scope}}/{{FLEXO_D_2_PASS_MODEL_ID}}/release
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "environments": [
+          "production_us-east-1",
+          "production_eu-central-1",
+          "production_ap-northeast-1",
+          "production_ap-southeast-2",
+          "production_sa-east-1",
+          "production_us-gov-west-1",
+          "qa2_us-east-1"
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

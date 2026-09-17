@@ -1,0 +1,24 @@
+meta {
+  name: Upload Hash
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{infinity_public_api_url}}/apiv2.2/u/DD8CA542AB516F7C
+  body: file
+  auth: inherit
+}
+
+headers {
+  X-IAUTH: {{public_api_auth_token}}
+}
+
+body:file {
+  file: @file() @contentType(application/octet-stream)
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

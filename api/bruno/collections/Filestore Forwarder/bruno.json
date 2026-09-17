@@ -1,0 +1,9 @@
+{
+  "name": "Filestore Forwarder",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "version": "1"
+}

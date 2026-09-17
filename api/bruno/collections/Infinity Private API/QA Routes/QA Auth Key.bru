@@ -1,0 +1,16 @@
+meta {
+  name: QA Auth Key
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/private/key/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

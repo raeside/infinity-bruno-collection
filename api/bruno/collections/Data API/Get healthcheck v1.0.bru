@@ -1,0 +1,20 @@
+meta {
+  name: Get healthcheck v1.0
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{data_api_url}}/apiv1.0/elb/{{env}}
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-IAUTH: 1CE91A9489A311E59D14120CD2C39521
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

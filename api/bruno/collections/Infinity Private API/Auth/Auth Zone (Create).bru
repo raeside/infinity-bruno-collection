@@ -1,0 +1,25 @@
+meta {
+  name: Auth Zone (Create)
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{private_api_url}}/apiv1.3/auth/zone
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "DeviceZoneId": "656555346F0664DADBEB240F17340BE73", 
+      "DeviceZoneName": null, 
+      "TenantId": null, 
+      "Disabled": false
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

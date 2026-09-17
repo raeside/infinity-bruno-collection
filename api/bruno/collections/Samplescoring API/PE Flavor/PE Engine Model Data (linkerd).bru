@@ -1,0 +1,16 @@
+meta {
+  name: PE Engine Model Data (linkerd)
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{linkerd_samplescoring_pe_flavor}}/v3/modelData
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

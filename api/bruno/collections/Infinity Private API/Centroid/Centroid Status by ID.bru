@@ -1,0 +1,16 @@
+meta {
+  name: Centroid Status by ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/status/centroids/{{sample_centroid_id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

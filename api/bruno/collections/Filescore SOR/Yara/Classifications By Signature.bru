@@ -1,0 +1,16 @@
+meta {
+  name: Classifications By Signature
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{filescore_sor_url}}/v3/yara/signatures/{{test_yara_signature_name}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

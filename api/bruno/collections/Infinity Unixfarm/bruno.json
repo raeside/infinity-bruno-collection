@@ -1,0 +1,9 @@
+{
+  "name": "Infinity Unixfarm",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "version": "1"
+}

@@ -1,0 +1,33 @@
+meta {
+  name: QC Activities
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{infinity_qc_api_url}}/apiv2/queue/64f7f7137a204190a877d846541b3111
+  body: json
+  auth: inherit
+}
+
+params:query {
+  @description('Sends through QA queues (QA queues may not be turned on especially in production)')
+  ~qa: 1
+}
+
+body:json {
+  {
+      "id": "id",
+      "file": {
+          "sha256": "sha256",
+          "type": "application/x-apk",
+          "source": 1
+      },
+      "priority": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

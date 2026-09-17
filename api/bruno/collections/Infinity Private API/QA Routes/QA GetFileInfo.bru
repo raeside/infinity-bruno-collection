@@ -1,0 +1,16 @@
+meta {
+  name: QA GetFileInfo
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/20FBC1FDFCDC96A7E21FB1C700A6517A61711732A0D31FC25A60609710ECBE09
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

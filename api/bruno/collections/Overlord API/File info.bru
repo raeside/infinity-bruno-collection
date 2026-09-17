@@ -1,0 +1,32 @@
+meta {
+  name: File info
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{private_api_url_mig}}/apiv1.3/mgmt/file
+  body: json
+  auth: none
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "FileHashes": [
+          "DF9C3C5D4B961C73773856CFEE7B78D52DA803A8AF38D2C0DA9013066176C50D"
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

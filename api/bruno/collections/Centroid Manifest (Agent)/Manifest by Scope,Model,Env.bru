@@ -1,0 +1,16 @@
+meta {
+  name: Manifest by Scope,Model,Env
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{linkerd_gateway}}/centroidmanifest/v3/manifests/{{universal_scope}}/{{FLEXO_D_2_PASS_MODEL_ID}}/{{prod_use1_env}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

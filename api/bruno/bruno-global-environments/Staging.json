@@ -1,0 +1,199 @@
+{
+  "name": "Staging",
+  "variables": [
+    {
+      "name": "data_api_url",
+      "value": "https://data-api.s.i.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "centropy_api_url",
+      "value": "https://ri-centropy.s.i.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "infinity_public_api_url",
+      "value": "https://api-staging.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "samplescoring_api_url",
+      "value": "http://samplescoring-universal-r02.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "databricks_online_store_url",
+      "value": "https://blackberry-staging.cloud.databricks.com/serving-endpoints",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "databricks_online_store_auth_token",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": true
+    },
+    {
+      "name": "malware_classification_api_url",
+      "value": "https://malware-classification-r02.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_gateway",
+      "value": "http://linkerd-gw.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_universal_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-universal-r02",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_mo_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-mo-r02",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_pe_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-pe-r02",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_elf_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-elf-r02",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "svc_yaas_api_url",
+      "value": "http://svc-yaas.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "private_api_url",
+      "value": "https://private-api.s.i.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "malware_classification_api_internal_url",
+      "value": "http://mc-infinity-r02.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "infinity_qc_api_url",
+      "value": "http://infinity-queue-controller-r02.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "filescore_sor_url",
+      "value": "http://filescoresor-r02.stage-use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_gateway_use2",
+      "value": "http://internal-cc-linkerd-gw-1222551016.us-east-2.elb.amazonaws.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "env",
+      "value": "9",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "epoch",
+      "value": "1735689600",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "mtd_scoring_url",
+      "value": "https://score-staging.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_unixfarm",
+      "value": "{{linkerd_gateway}}/unixfarm-r02",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "malware_classification_token_read",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "private_api_url_mig",
+      "value": "http://internal-infinity-private-api-r02-int-2024893661.us-east-1.elb.amazonaws.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "access_token",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "access_token_exp",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "private_api_legacy_url",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-09-17T15:58:23.205Z",
+    "exportedUsing": "Bruno/v4.1.0"
+  }
+}

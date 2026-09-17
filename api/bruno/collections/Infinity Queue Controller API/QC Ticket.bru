@@ -1,0 +1,33 @@
+meta {
+  name: QC Ticket
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{infinity_qc_api_url}}/apiv1/tickets
+  body: json
+  auth: inherit
+}
+
+params:query {
+  @description('Sends through QA queues (QA queues may not be turned on especially in production)')
+  ~qa: 1
+}
+
+body:json {
+  {
+      "File": {
+          "sha256hash": "C22A91005D340D13798DFA2BAF7B5DCB638213D21EED4018E28E0702184E6028",
+          "file_type": "APPLICATION/X-APK",
+          "file_source": 1
+      },
+      "Priority": 1,
+      "Version": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

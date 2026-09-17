@@ -1,0 +1,16 @@
+meta {
+  name: ELF Raw Engine Hash Result
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{linkerd_samplescoring_elf_flavor}}/v3/_/raw/bahamutElfEngine/{{sample_elf_hash}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

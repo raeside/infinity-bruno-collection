@@ -1,0 +1,22 @@
+meta {
+  name: Rate Limit_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{infinity_qc_api_url}}/apiv1/rateLimit
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "rateLimit": 1000
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

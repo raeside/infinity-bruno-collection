@@ -1,0 +1,22 @@
+meta {
+  name: Forward Rate_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{LINKERD_GW_USE2}}/filestore-forwarder/v3/rate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "rate": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

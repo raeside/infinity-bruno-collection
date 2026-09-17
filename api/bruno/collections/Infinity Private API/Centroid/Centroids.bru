@@ -1,0 +1,16 @@
+meta {
+  name: Centroids
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/centroids
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

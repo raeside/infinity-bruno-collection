@@ -1,0 +1,21 @@
+meta {
+  name: Auth Search
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/auth/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~account_name: STRANGEST THINGS
+  ~account_type: 3
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

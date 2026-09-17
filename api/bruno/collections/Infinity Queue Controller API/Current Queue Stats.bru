@@ -1,0 +1,16 @@
+meta {
+  name: Current Queue Stats
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{infinity_qc_api_url}}/apiv2/stats/current
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

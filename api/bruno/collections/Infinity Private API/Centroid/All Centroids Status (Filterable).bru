@@ -1,0 +1,25 @@
+meta {
+  name: All Centroids Status (Filterable)
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/status/centroids
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~disabled: true
+  ~color: black
+  ~listeningMode: true
+  ~model: DALEK
+  ~endpoint: true
+  ~cursor: WFVENDgxOU0wR0hWMU00NkNIQUhCWkFKMzhQMjFDSlQ=
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

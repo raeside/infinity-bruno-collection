@@ -1,0 +1,27 @@
+meta {
+  name: Query Hash
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{infinity_public_api_url}}/apiv2.2/q?m=1&ul=1&c=all&h={{sample_hash}}
+  body: none
+  auth: none
+}
+
+params:query {
+  m: 1
+  ul: 1
+  c: all
+  h: {{sample_hash}}
+}
+
+headers {
+  X-IAUTH: {{public_api_auth_token}}
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

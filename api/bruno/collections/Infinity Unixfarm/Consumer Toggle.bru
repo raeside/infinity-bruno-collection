@@ -1,0 +1,22 @@
+meta {
+  name: Consumer Toggle
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{linkerd_unixfarm}}/v3/_/consumers/64f7f7137a204190a877d846541b313a
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "isRunning": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

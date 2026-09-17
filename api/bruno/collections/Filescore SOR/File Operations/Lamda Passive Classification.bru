@@ -1,0 +1,28 @@
+meta {
+  name: Lamda Passive Classification
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{filescore_sor_url}}/v3/lamda/passive/classification/C0FFEEEEFCDC96A7E21FB1C700A6517A61711732A0D31FC25A60609710ECBE09
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "model_name": "pe8a",
+      "model_version": "133893016776205530",
+      "model_score": 0.97,
+      "lamda_score": "UNSAFE",
+      "nn_distance": 0.023,
+      "nn_hash": "29b1f879fbb5eeb4447552b14afb2e76adcf6987218167ed01d7e44b5013b661",
+      "lamda_processed_at": "2026-06-18T12:34:56Z"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

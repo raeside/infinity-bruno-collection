@@ -1,0 +1,33 @@
+meta {
+  name: QC Ticket V2
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{infinity_qc_api_url}}/apiv2/tickets?qa=1
+  body: json
+  auth: inherit
+}
+
+params:query {
+  @description('Sends through QA queues (QA queues may not be turned on especially in production)')
+  qa: 1
+}
+
+body:json {
+  {
+      "id": "b2b1a1ab8b3149969b05dc61925936bc",
+      "priority": 1,
+      "file": {
+          "sha256": "20FBC1FDFCDC96A7E21FB1C700A6517A61711732A0D31FC25A60609710ECBE09",
+          "type": "application/x-elf",
+          "source": 30
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

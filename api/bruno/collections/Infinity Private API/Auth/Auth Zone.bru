@@ -1,0 +1,16 @@
+meta {
+  name: Auth Zone
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/auth/zone/BA678D470B2E42F9A80D55360F44CD2E
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

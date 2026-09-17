@@ -1,0 +1,35 @@
+meta {
+  name: BR Add Results
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{centropy_api_url}}/v1/backtest/results/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "results": {
+          "centroid_id": "centroid_id",
+          "metadata": {},
+          "num_total_samples": 0,
+          "hits": [
+              {
+                  "sample_hash": "sha256"
+              }
+          ]
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  Add the provided backtest result to the data store
+}

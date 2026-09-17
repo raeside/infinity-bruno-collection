@@ -1,0 +1,16 @@
+meta {
+  name: Health
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{centropy_api_url}}/_/health
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
