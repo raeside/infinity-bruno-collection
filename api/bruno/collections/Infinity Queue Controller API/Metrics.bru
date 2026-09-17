@@ -1,0 +1,16 @@
+meta {
+  name: Metrics
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{infinity_qc_api_url}}/_/metrics
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

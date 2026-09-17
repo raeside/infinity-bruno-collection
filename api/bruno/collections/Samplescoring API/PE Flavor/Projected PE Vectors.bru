@@ -1,0 +1,20 @@
+meta {
+  name: Projected PE Vectors
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{samplescoring_api_url}}/v3/vectors/peEngine/{{sample_pe_hash}}?b64encoded=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  b64encoded: true
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

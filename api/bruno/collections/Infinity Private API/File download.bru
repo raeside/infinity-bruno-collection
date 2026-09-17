@@ -1,0 +1,20 @@
+meta {
+  name: File download
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/download?sha256=b16abf29f09eee5723d8485054d64faa9ef8c65126ddf45fdf4f70c88de04248
+  body: none
+  auth: inherit
+}
+
+params:query {
+  sha256: b16abf29f09eee5723d8485054d64faa9ef8c65126ddf45fdf4f70c88de04248
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

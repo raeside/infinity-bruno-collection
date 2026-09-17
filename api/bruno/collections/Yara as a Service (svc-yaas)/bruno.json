@@ -1,0 +1,9 @@
+{
+  "name": "Yara as a Service (svc-yaas)",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "version": "1"
+}

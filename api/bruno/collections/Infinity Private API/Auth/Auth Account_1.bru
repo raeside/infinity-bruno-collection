@@ -1,0 +1,27 @@
+meta {
+  name: Auth Account_1
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{private_api_url}}/apiv1.3/auth/account/41A37186AEECB90EFE4C6D29D50266E3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "account_name": null,
+      "account_type": null,
+      "service_class": null,
+      "licensed_product": null,
+      "expiration_date": null,
+      "account_disabled": null
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

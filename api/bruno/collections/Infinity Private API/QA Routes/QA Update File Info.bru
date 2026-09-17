@@ -1,0 +1,29 @@
+meta {
+  name: QA Update File Info
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/update_file_info
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "sha256": "F03ACA2732F4587F85CD8859D3AE47D445BA85A46B8E56C951DC2DB26C8033D3",
+      "sha1": "AEF24707371E170AA076DF21DE4D31C37DF33038",
+      "md5": "84EC6F6674BBC287103AF8E765A151DF",
+      "file_size": 6942,
+      "file_type_id": 257,
+      "file_type_extended_id": null,
+      "state_id": 2,
+      "file_source": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

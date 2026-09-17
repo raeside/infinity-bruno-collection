@@ -1,0 +1,20 @@
+meta {
+  name: Centroids Metadata
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/centroids/metadata
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  Centropy API "Infinity Status Refresher" hits this endpoint to update deployment status' for centroids.
+}

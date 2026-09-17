@@ -1,0 +1,16 @@
+meta {
+  name: MO Engine Model Data
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{samplescoring_api_url}}/v3/moEngine/modelData
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

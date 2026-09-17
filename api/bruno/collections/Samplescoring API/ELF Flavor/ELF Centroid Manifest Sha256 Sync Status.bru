@@ -1,0 +1,20 @@
+meta {
+  name: ELF Centroid Manifest Sha256 Sync Status
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{linkerd_samplescoring_elf_flavor}}/v3/manifest/sha256?sync=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  sync: false
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

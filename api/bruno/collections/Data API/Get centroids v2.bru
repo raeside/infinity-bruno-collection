@@ -1,0 +1,20 @@
+meta {
+  name: Get centroids v2
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{data_api_url}}/apiv2/centroids
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-IAUTH: 1CE91A9489A311E59D14120CD2C39521
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Yara Signatures
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{svc_yaas_api_url}}/v3/signatures/{{sample_yara_hash}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

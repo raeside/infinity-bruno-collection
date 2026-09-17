@@ -1,0 +1,26 @@
+meta {
+  name: Yara Classifications
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{filescore_sor_url}}/v3/yara/classification/{{sample_filescore_hash}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+      {
+          "signatureName": {{test_yara_signature_name}},
+          "signatureVersion": "0.0.1",
+          "classification": 1
+      }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

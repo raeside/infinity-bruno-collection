@@ -1,0 +1,16 @@
+meta {
+  name: ELF Engine Model Data
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{linkerd_samplescoring_elf_flavor}}/v3/modelData
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Reprocess File
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{private_api_url_mig}}/apiv1.3/mgmt/file/DF9C3C5D4B961C73773856CFEE7B78D52DA803A8AF38D2C0DA9013066176C50D/reprocess
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

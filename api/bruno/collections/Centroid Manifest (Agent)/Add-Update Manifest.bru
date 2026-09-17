@@ -1,0 +1,28 @@
+meta {
+  name: Add/Update Manifest
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{linkerd_gateway_use2}}/centroidmanifest/v3/manifest/{{universal_scope}}/{{FLEXO_D_2_PASS_MODEL_ID}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "centroids": [
+          {
+              "id": "centroid_id",
+              "filename": "centroid_id.cyb",
+              "color": "white|black"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

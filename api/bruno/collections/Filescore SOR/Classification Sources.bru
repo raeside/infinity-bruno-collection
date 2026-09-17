@@ -1,0 +1,24 @@
+meta {
+  name: Classification Sources
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{filescore_sor_url}}/v3/classification/sources
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Content-Type: application/json
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

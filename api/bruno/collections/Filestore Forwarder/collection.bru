@@ -1,0 +1,15 @@
+meta {
+  name: Filestore Forwarder
+}
+
+auth {
+  mode: none
+}
+
+vars:pre-request {
+  LINKERD_GW_USE2: http://internal-cc-linkerd-gw-1222551016.us-east-2.elb.amazonaws.com
+}
+
+docs {
+  Turns on file forwarding from production to staging. Injects a percentage (0-100) of hashes that are submitted to production and injects them into cylance staging s3. This is used to replicate (a percentage of) production traffic in staging to end-to-end test infinity's file scoring capabilities in staging.
+}

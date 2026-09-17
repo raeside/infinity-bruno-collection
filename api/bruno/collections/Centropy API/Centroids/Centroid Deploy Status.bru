@@ -1,0 +1,16 @@
+meta {
+  name: Centroid Deploy Status
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{centropy_api_url}}/v1/ds_statuses/{{sample_agent_only_centroid_id}}
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

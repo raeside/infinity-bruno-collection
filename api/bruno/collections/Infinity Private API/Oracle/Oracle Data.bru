@@ -1,0 +1,20 @@
+meta {
+  name: Oracle Data
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/oracle/070FD9E2E76976FB1BC8C53EE5D7789CFCD26646DD4E0522B848595483328DF1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  This call will send the hash to the privateapi.RequestHashCache_\[9,17\] celeryfarm task
+}

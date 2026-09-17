@@ -1,0 +1,20 @@
+meta {
+  name: MO Centroid Manifest Sha256 Sync Status
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{samplescoring_api_url}}/v3/moEngine/manifest/sha256?sync=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  sync: false
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

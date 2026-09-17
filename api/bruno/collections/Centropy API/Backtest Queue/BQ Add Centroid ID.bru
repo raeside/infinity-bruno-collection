@@ -1,0 +1,26 @@
+meta {
+  name: BQ Add Centroid ID
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{centropy_api_url}}/v1/backtest/queue/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "centroid ID"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  Add a centroid ID to the backtest queue
+}

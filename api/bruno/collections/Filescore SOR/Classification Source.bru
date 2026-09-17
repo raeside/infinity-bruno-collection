@@ -1,0 +1,30 @@
+meta {
+  name: Classification Source
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{filescore_sor_url}}/v3/classification/source
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "QA_APK3D"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

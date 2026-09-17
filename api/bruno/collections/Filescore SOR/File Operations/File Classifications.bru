@@ -1,0 +1,16 @@
+meta {
+  name: File Classifications
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{filescore_sor_url}}/v3/classification/sources
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

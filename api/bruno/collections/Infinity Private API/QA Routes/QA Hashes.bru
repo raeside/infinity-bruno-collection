@@ -1,0 +1,16 @@
+meta {
+  name: QA Hashes
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/hashes
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

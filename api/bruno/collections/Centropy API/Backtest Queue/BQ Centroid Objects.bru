@@ -1,0 +1,20 @@
+meta {
+  name: BQ Centroid Objects
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{centropy_api_url}}/v1/backtest/queue/centroids
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  Get the list of JSON formatted centroid objects pending backtest
+}

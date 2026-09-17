@@ -1,0 +1,16 @@
+meta {
+  name: Consumers Status
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{linkerd_unixfarm}}/v3/_/consumers/status
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

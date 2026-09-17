@@ -1,0 +1,20 @@
+meta {
+  name: Refresh Infinity Statuses
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{centropy_api_url}}/v1/refresh_infinity_statuses
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
+
+docs {
+  Pulls centroid metadata from private api and updates the deployment status of infinity centroids in centropy (eventually consistent - call triggers code that runs as a thread in centropy)
+}

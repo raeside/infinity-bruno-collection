@@ -1,0 +1,178 @@
+{
+  "name": "Production",
+  "variables": [
+    {
+      "name": "centropy_api_url",
+      "value": "https://ri-centropy.i.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "infinity_public_api_url",
+      "value": "https://api.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "samplescoring_api_url",
+      "value": "http://samplescoring.use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "data_api_url",
+      "value": "https://inf-data.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "databricks_online_store_url",
+      "value": "https://blackberry-use1.cloud.databricks.com/serving-endpoints",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "databricks_online_store_auth_token",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": true
+    },
+    {
+      "name": "malware_classification_api_url",
+      "value": "https://malware-classification.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_gateway",
+      "value": "http://linkerd-gw.use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_universal_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-universal",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_mo_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-mo",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_pe_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-pe",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_samplescoring_elf_flavor",
+      "value": "{{linkerd_gateway}}/samplescoring-elf-2",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "svc_yaas_api_url",
+      "value": "http://svc-yaas.use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "private_api_url",
+      "value": "https://private-api.i.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "malware_classification_api_internal_url",
+      "value": "http://mc-infinity.use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "infinity_qc_api_url",
+      "value": "http://infinity-qc.use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "filescore_sor_url",
+      "value": "http://filescore-sor.use1.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "env",
+      "value": "17",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "epoch",
+      "value": "1735689600",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "linkerd_unixfarm",
+      "value": "{{linkerd_gateway}}/infinity-unixfarm-api-pr0",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "private_api_url_mig",
+      "value": "http://internal-infinity-private-api-int-2081557625.us-east-1.elb.amazonaws.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "access_token",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "access_token_exp",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "private_api_legacy_url",
+      "value": "https://private-api-legacy.i.cylance.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-09-17T15:58:23.204Z",
+    "exportedUsing": "Bruno/v4.1.0"
+  }
+}

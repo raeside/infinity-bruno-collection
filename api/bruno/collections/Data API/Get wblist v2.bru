@@ -1,0 +1,24 @@
+meta {
+  name: Get wblist v2
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{data_api_url}}/apiv2/wblist?after={{epoch_timestamp}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  after: {{epoch_timestamp}}
+}
+
+headers {
+  X-IAUTH: 1CE91A9489A311E59D14120CD2C39521
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

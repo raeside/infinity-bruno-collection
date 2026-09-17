@@ -1,0 +1,29 @@
+meta {
+  name: Auth Key (Create)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{private_api_url}}/apiv1.3/auth/venue/key
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "DeviceApiKey": "A19F9B8FD3B9418F82C8DD39C9A7F836",
+      "DeviceId": "0E5F35E342A44784B38EBE5EB2B0C423",
+      "TenantId": "E4ACDE72BC88440BA15AE7E7BD54B61F",
+      "ShardId": 1,
+      "DeviceZones": ["D0EC2D91E4A24CDCBA9FABD3E61F8B9D"],
+      "TenantName": "Sphynx Optics Test",
+      "CreatedAt": "2025-06-18T12:33",
+      "ExpirationDate": "2026-05-20T12:33"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

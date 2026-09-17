@@ -1,0 +1,22 @@
+meta {
+  name: Centroid Manifest (Agent)
+}
+
+auth {
+  mode: none
+}
+
+vars:pre-request {
+  qa2_use1_env: qa2_us-east-1
+  prod_use1_env: production_us-east-1
+  universal_scope: universal
+  qa2_scope: qa2
+}
+
+docs {
+  As of March 2025: Staging for this service is still in us-east-2 environment.
+  
+  API Service interface to create/update/maintain model agent centroid manifests for the agent.
+  
+  There is automation that uses this API within a jenkins job: [https://jenkins-inf.i.cylance.com/view/Infinity/job/Centroids/job/Endpoint%20Protobuf%20Release/](https://jenkins-inf.i.cylance.com/view/Infinity/job/Centroids/job/Endpoint%20Protobuf%20Release/)
+}

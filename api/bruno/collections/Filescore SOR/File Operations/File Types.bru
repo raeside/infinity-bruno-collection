@@ -1,0 +1,16 @@
+meta {
+  name: File Types
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{filescore_sor_url}}/v3/file/types
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

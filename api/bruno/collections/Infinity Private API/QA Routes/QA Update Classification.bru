@@ -1,0 +1,25 @@
+meta {
+  name: QA Update Classification
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/update_classification
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "sha256": "5E3916AE119365D78C76A321029314381775CD3B5F19E75630608FBAEB7BE870",
+      "classification_id": 44,
+      "result": 0,
+      "confidence": 0.6
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

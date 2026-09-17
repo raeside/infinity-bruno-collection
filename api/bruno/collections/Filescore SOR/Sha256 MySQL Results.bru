@@ -1,0 +1,20 @@
+meta {
+  name: Sha256 MySQL Results
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{filescore_sor_url}}/v3/results?sha256={{sample_hash}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  sha256: {{sample_hash}}
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

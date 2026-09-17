@@ -1,0 +1,16 @@
+meta {
+  name: Auth Account
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{private_api_url}}/apiv1.3/auth/account/1D78A2643B8741CD88150B337E0DDD73
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

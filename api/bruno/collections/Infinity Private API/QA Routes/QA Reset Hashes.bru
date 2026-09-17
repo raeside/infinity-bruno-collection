@@ -1,0 +1,50 @@
+meta {
+  name: QA Reset Hashes
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{private_api_url}}/apiv1.3/qa/infinity/reset
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "hashes": [
+          {
+              "sha256": "5795FBE5E3331BDD1A878F5B2884F29D0CB6118977E825401DEC535EFFF7174F",
+              "sha1": "B057B19F82427471F900CB6D4B8F569B3BB5B15D",
+              "md5": "1B3B0359FD22FD0D9678AA5EFACD547B",
+              "file_size": 1024,
+              "file_type_id": 77,
+              "file_type_extended": null,
+              "state_id": 2,
+              "file_source": 1,
+              "classifications": [
+                  {
+                      "classification_id": 5,
+                      "result": -1,
+                      "confidence": 0.99
+                  },
+                  {
+                      "classification_id": 6,
+                      "result": 1,
+                      "confidence": 0.99
+                  },
+                                  {
+                      "classification_id": 43,
+                      "result": -1,
+                      "confidence": 0.98
+                  }
+              ]
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

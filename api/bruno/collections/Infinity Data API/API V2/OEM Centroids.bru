@@ -1,0 +1,20 @@
+meta {
+  name: OEM Centroids
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{data_api_url}}/apiv2/centroids
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-IAUTH: {{inf_data_api_auth_token}}
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

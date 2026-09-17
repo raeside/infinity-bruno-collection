@@ -1,0 +1,16 @@
+meta {
+  name: Universal Engine Model Data (linkerd)
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{linkerd_samplescoring_universal_flavor}}/v3/modelData
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

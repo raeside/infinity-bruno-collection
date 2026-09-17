@@ -1,0 +1,29 @@
+meta {
+  name: File Info_1
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{filescore_sor_url}}/v3/file/info
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "fileTypeId": 0,
+      "sha1": "sha1",
+      "fileSize": 0,
+      "fileStateId": 0,
+      "fileTypeFull": "tests",
+      "sha256": "sha256",
+      "fileSourceId": 0,
+      "md5": "md5"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}

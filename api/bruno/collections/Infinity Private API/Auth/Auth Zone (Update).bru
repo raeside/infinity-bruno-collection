@@ -1,0 +1,22 @@
+meta {
+  name: Auth Zone (Update)
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{private_api_url}}/apiv1.3/auth/zone/AF1AF6FB15CF4F4CBB9800A762EE9355
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "DeviceZoneName": "Anfo_Test"
+  }
+}
+
+settings {
+  encodeUrl: true
+  forwardAuthorizationHeader: false
+}
